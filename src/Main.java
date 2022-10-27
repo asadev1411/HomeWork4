@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
-        //Задача №1
-        System.out.println("Задача №1");
+        //Homework №1. Task №1
+        System.out.println("Домашнее задание№1. Задача №1");
         System.out.println("Ответ на запрос о регистрации несовершеннолетнего пользователя:");
         int agePupil = 15;
         if (agePupil >= 18) {
@@ -20,9 +20,9 @@ public class Main {
         if (ageStudent < 18) {
             System.out.println("Возраст совершеннолетия ещё не наступил. Просим подождать до наступления 18 лет");
         }
-        //Задача №2
+        //Homework №1. Task №2
         System.out.println("");
-        System.out.println("Задача №2");
+        System.out.println("Домашнее задание№1. Задача №2");
             int agePerson = 28;
             if (agePerson >= 7 && agePerson < 18) {
             System.out.println("Ребенок ходит в школу.");
@@ -33,25 +33,30 @@ public class Main {
         if (agePerson >= 24) {
             System.out.println("Человек окончил университет и работает по специальности.");
         }
-        //Задача №3
+        ///Homework №1. Task №3
         System.out.println("");
-        System.out.println("Задача №3");
-        int passenger = 28;
+        System.out.println("Домашнее задание№1. Задача №3");
+        int passenger = 82;
         int wagonCapacity = 102;
         int totalSeatPlace = 60;
         int totalStandPlace = wagonCapacity - totalSeatPlace;
         int freeSeatPlace = totalSeatPlace - passenger;
-        int freeStandPlace = totalStandPlace - passenger;
+        int freeStandPlace = totalStandPlace - passenger + totalSeatPlace;
 
         if (passenger < 59) {
-            System.out.println("В вагоне есть " + freeSeatPlace + " сидячих мест и " + freeStandPlace + "и стоячие места.");
+            System.out.println("В вагоне есть " + freeSeatPlace + " сидячих мест и " + totalStandPlace + " стоячих мест.");
+        }
+        if (passenger == 59) {
+            System.out.println("В вагоне есть " + freeSeatPlace + " сидячее место и " + totalStandPlace + " стоячих мест.");
         }
         if (passenger >= 60 && passenger < 101) {
-            System.out.println("В вагоне есть только стоячие места.");
+            System.out.println("В вагоне нет сидячих мест, есть только " + freeStandPlace + " стоячих мест.");
+        }
+        if (passenger == 101) {
+            System.out.println("В вагоне нет сидячих мест, есть только " + freeStandPlace + " стоячее место.");
         }
         if (passenger >= 102) {
-            System.out.println("В вагоне нет мест.");
+            System.out.println("Вагон уже полностью забит.");
         }
-
     }
 }

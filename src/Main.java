@@ -39,24 +39,24 @@ public class Main {
         //Homework №1. Task №3
         System.out.println("");
         System.out.println("Домашнее задание№1. Задача №3");
-        int passenger = 82;
-        int wagonCapacity = 102;
+        int passenger = 59;
+        int carCapacity = 102;
         int totalSeatPlace = 60;
-        int totalStandPlace = wagonCapacity - totalSeatPlace;
+        int totalStandingPlace = carCapacity - totalSeatPlace;
         int freeSeatPlace = totalSeatPlace - passenger;
-        int freeStandPlace = totalStandPlace - passenger + totalSeatPlace;
+        int freeStandingPlace = totalStandingPlace - passenger + totalSeatPlace;
 
         if (passenger < 59) {
-            System.out.println("В вагоне есть " + freeSeatPlace + " сидячих мест и " + totalStandPlace + " стоячих мест.");
+            System.out.println("В вагоне есть " + freeSeatPlace + " сидячих мест и " + totalStandingPlace + " стоячих мест.");
         }
         if (passenger == 59) {
-            System.out.println("В вагоне есть " + freeSeatPlace + " сидячее место и " + totalStandPlace + " стоячих мест.");
+            System.out.println("В вагоне есть " + freeSeatPlace + " сидячее место и " + totalStandingPlace + " стоячих мест.");
         }
         if (passenger >= 60 && passenger < 101) {
-            System.out.println("В вагоне нет сидячих мест, есть только " + freeStandPlace + " стоячих мест.");
+            System.out.println("В вагоне нет сидячих мест, есть только " + freeStandingPlace + " стоячих мест.");
         }
         if (passenger == 101) {
-            System.out.println("В вагоне нет сидячих мест, есть только " + freeStandPlace + " стоячее место.");
+            System.out.println("В вагоне нет сидячих мест, есть только " + freeStandingPlace + " стоячее место.");
         }
         if (passenger >= 102) {
             System.out.println("Вагон уже полностью забит.");
@@ -89,23 +89,23 @@ public class Main {
         System.out.println("");
         System.out.println("Домашнее задание№2. Задача №3");
         int passengers = 88;
-        int wagonsCapacity = 102;
+        int carsCapacity = 102;
         int totalSeatPlaces = 60;
-        int totalStandPlaces = wagonsCapacity - totalSeatPlaces;
+        int totalStandingPlaces = carsCapacity - totalSeatPlaces;
         int freeSeatPlaces = totalSeatPlaces - passengers;
-        int freeStandPlaces = totalStandPlaces - passengers + totalSeatPlaces;
+        int freeStandingPlaces = totalStandingPlaces - passengers + totalSeatPlaces;
 
         if (passengers < 59) {
-            System.out.println("В вагоне есть " + freeSeatPlaces + " сидячих мест и " + totalStandPlaces + " стоячих мест.");
+            System.out.println("В вагоне есть " + freeSeatPlaces + " сидячих мест и " + totalStandingPlaces + " стоячих мест.");
         }
         else if (passengers == 59) {
-            System.out.println("В вагоне есть " + freeSeatPlaces + " сидячее место и " + totalStandPlaces + " стоячих мест.");
+            System.out.println("В вагоне есть " + freeSeatPlaces + " сидячее место и " + totalStandingPlaces + " стоячих мест.");
         }
         else if (passengers >= 60 && passengers < 101) {
-            System.out.println("В вагоне нет сидячих мест, есть только " + freeStandPlaces + " стоячих мест.");
+            System.out.println("В вагоне нет сидячих мест, есть только " + freeStandingPlaces + " стоячих мест.");
         }
         else if (passengers == 101) {
-            System.out.println("В вагоне нет сидячих мест, есть только " + freeStandPlaces + " стоячее место.");
+            System.out.println("В вагоне нет сидячих мест, есть только " + freeStandingPlaces + " стоячее место.");
         } else {
             System.out.println("Вагон уже полностью забит.");
         }
